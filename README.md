@@ -1,6 +1,6 @@
-## Intership | React Game Finder App [WIP]
+## Internship | React Game Finder App 
 
-This is a colaborative app developed for the Intership: Become a Frontend Developer with Altimetrik.
+This collaborative app was developed for the Intership: Become a Frontend Developer with Altimetrik.
 
 ## Table of contents
 
@@ -20,21 +20,21 @@ Rebuild the Game Finder app from the previous BFEDA Bootcamp in React js
 
 Users should be able to:
 
-- Use the carousel ✓
-- Log in with the given credentials ✓
-- Search games by its name and platform avaiable (xbox, playstation, pc, nintendo) (not yet)
-- Click the game title to obtain more information about it (modal) (not yet)
-- Switch the view of the games (not yet)
-- Switch themes (not yet)
-- Obtein the first game of the last to searches clicking in "last searches" (not yet)
-- Log out (not yet)
+- Use the carousel 
+- Log in with the given credentials 
+- Search games by their name and platform available (Xbox, PlayStation, PC, Nintendo)
+- Click the game title to obtain more information about it (modal) 
+- Switch the view of the games 
+- Switch themes 
+- Obtain the first game of the last to searches clicking in "last searches" 
+- Log out 
 
 ### Screenshot
 
 Login
 ![image](https://user-images.githubusercontent.com/115493411/199963516-21b74955-66ae-4af5-87c6-04f34cdef664.png)
 
-Home(not yet)
+Home
 
 ### How to run the app
 
