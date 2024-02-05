@@ -1,0 +1,72 @@
+.home__main__banner-section {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 141px;
+  padding: 0 27px;
+  transition: all 0.3s;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home__main__banner-section .banner-text__container {
+  min-width: 285px;
+  color: var(--text-color);
+}
+
+.home__main__banner-section .banner-text__container h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-top: 19px;
+}
+
+.home__main__banner-section .banner-text__container p {
+  font-size: 1.125rem;
+  margin-top: 2px;
+}
+
+.home__main__banner-section .banner-vw-darkmode-container {
+  padding-top: 19px;
+}
+
+.home__main__banner-section .banner-view-btns__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 104px;
+  margin-top: 16px;
+  margin-left: 40px;
+}
+
+.home__main__banner-section button {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+
+  border: transparent;
+  border-radius: 11px;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.home__main__banner-section button:focus-visible {
+  outline: 1px solid var(--primary-color);
+}
+
+.home__main__banner-section button svg.inactive rect {
+  fill: var(--inactive-vw-bg-color);
+}
+
+.home__main__banner-section button svg.inactive path {
+  fill: var(--inactive-vw-lines-color);
+}
+
+.home__main__banner-section button svg.active rect {
+  fill: var(--active-vw-bg-color);
+}
+
+.home__main__banner-section button svg.active path {
+  fill: var(--active-vw-lines-color);
+}

@@ -1,0 +1,48 @@
+.snackbar {
+  position: fixed;
+  left: 50%;
+  bottom: 30px;
+
+  min-width: 250px;
+  padding: 16px;
+  margin-left: -125px;
+
+  border-radius: 16px;
+  background-color: var(--gray-500);
+
+  color: var(--white);
+  text-align: center;
+
+  z-index: 3;
+}
+
+#show {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+#hide {
+  visibility: hidden;
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}

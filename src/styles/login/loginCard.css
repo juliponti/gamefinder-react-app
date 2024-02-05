@@ -1,0 +1,441 @@
+.login-card__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  max-width: 1500px;
+  padding: 0 21px;
+  margin-bottom: 11px;
+}
+
+.card__container {
+  width: min(462px, 100vw);
+  padding: 40px 49px;
+  margin-top: 15px;
+  border-radius: 12px;
+  background-color: var(--login-color);
+}
+
+/* Login Auth */
+
+.card-header {
+  color: var(--text-color);
+  text-align: center;
+}
+
+.card-header h1 {
+  font-size: 1.25rem;
+}
+
+.card-header h2 {
+  margin-top: 11px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.form__container {
+  margin-top: 36px;
+  margin-bottom: 32px;
+}
+
+.form__fieldset {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border: none;
+}
+
+.form__fieldset input,
+.form__fieldset .icon__container input {
+  width: 100%;
+  height: 47px;
+  padding: 10.55px 16px;
+  border: transparent;
+  border-radius: 4px;
+  font-size: 0.938rem;
+  color: var(--gray-550);
+}
+
+.form__fieldset input::placeholder {
+  color: var(--gray-400);
+  font-size: 0.938rem;
+  font-family: "Exo", sans-serif;
+  font-weight: 400;
+}
+.form__fieldset input {
+  outline: 0px;
+}
+
+.valid-input:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+.form__fieldset .success {
+  outline: 3px solid var(--primary-color);
+}
+
+.form__fieldset .error {
+  outline: 2px solid var(--error-color);
+}
+
+.form__fieldset .error-input:focus {
+  outline: 2px solid var(--error-color);
+}
+
+.form__fieldset input:disabled {
+  background-color: var(--gray-55);
+}
+
+.form__fieldset .icon__container {
+  position: relative;
+  width: 100%;
+}
+
+.form__fieldset .icon__container .password-icon,
+.eye-psw-error {
+  position: absolute;
+  top: 11px;
+  left: 90%;
+}
+
+.form__fieldset .icon__container .eye-psw-error {
+  filter: invert(1);
+}
+
+input[type="password"]:not(:placeholder-shown) {
+  font-family: "pass";
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: var(--gray-550);
+}
+
+.secondary__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 14px;
+  margin-bottom: 24px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label:before {
+  border-color: var(--primary-300);
+  color: var(--white);
+  content: url(../../assets/svg/login/check-tick.svg);
+  background-color: var(--primary-300);
+}
+
+.checkbox__container label {
+  padding-left: 2.25rem;
+  padding-top: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.checkbox__container label:before {
+  content: " ";
+  border: solid 1px var(--gray-400);
+  border-radius: 4px;
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  left: 0;
+}
+
+.form__button {
+  width: 100%;
+  height: 47px;
+  border-radius: 6px;
+  color: var(--white);
+  background-color: var(--primary-200);
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.form__button:hover {
+  filter: drop-shadow(0px 3px 7px var(--button-hover));
+  transition: all 0.3s ease;
+}
+
+.form__button:active {
+  filter: drop-shadow(0px 6px 0px var(--button-active));
+  transition: all 0.3s ease;
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--white);
+}
+
+.register__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 8px;
+}
+
+.register__container p {
+  color: var(--text-color);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.register__link {
+  position: relative;
+  font-size: 0.875rem;
+  font-weight: 600;
+  background-color: inherit;
+  color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+}
+
+.register__link:focus-visible {
+  outline: 2px solid var(--primary-color);
+}
+
+.register__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 8px;
+}
+
+.register__container p {
+  color: var(--text-color);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.register__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register__link {
+  position: relative;
+  margin-left: 5.6px;
+
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--primary-color);
+
+  border: none;
+  cursor: pointer;
+}
+
+.register__link:hover ~ .tooltip {
+  display: block;
+}
+
+.register__link:focus-visible {
+  outline: 2px solid var(--primary-color);
+}
+
+.psw-eye {
+  fill: var(--primary-300);
+}
+
+.error-message-off {
+  display: none;
+}
+
+.error-message-on {
+  display: block;
+  width: 100%;
+
+  padding: 5px;
+
+  border: 1px solid var(--error-color);
+  border-radius: 4px;
+
+  color: var(--text-color);
+  text-align: center;
+}
+
+.or__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+.or__container p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--text-color);
+  opacity: 0.5;
+}
+
+.or__container p:after,
+.or__container p:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 2.07px;
+  width: 47%;
+  border-top: 1px solid var(--text-color);
+  left: 200px;
+}
+
+.or__container p:before {
+  left: -9px;
+}
+
+/* Social Media Section */
+
+.ssmm__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+  height: 190px;
+}
+
+.ssmm-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 47px;
+
+  border: 2px solid var(--ssmm-color);
+  border-radius: 6px;
+
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--ssmm-color);
+  background-color: transparent;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.ssmm-btn:hover {
+  filter: drop-shadow(0px 3px 5px var(--ssmm-color));
+  transition: all 0.3s ease;
+}
+
+.ssmm-btn:hover + .tooltip {
+  display: block;
+}
+
+.ssmm-btn:focus-visible {
+  outline: 2px solid var(--primary-color);
+}
+
+.ssmm-btn:active {
+  box-shadow: 0px 4px 0px var(--ssmm-color);
+}
+
+.ssmm-btn > div {
+  display: flex;
+  align-items: center;
+
+  width: 67%;
+}
+
+.ssmm-btn > div > svg {
+  margin-right: 14px;
+}
+
+.ssmm-btn > div > svg > path {
+  fill: var(--ssmm-color);
+}
+
+.ssmm-btn__tw-logo {
+  margin-right: 24px;
+}
+
+.ssmm-btn__google-logo {
+  margin-right: 30px;
+}
+
+.ssmm-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 14px;
+}
+
+.tooltip {
+  display: none;
+
+  position: absolute;
+  padding: 8px 11px;
+
+  background-color: var(--white);
+  border-radius: 5px;
+
+  font-size: 0.9em;
+
+  transform: translate(-50%);
+  transform-style: preserve-3d;
+  z-index: 200;
+}
+
+.tooltip::after,
+.tooltip::before {
+  content: "";
+  display: block;
+
+  position: absolute;
+  left: 50%;
+
+  width: 10px;
+  height: 10px;
+
+  transform-origin: 50% 50%;
+}
+
+.tooltip::after {
+  top: -1px;
+
+  transform: rotate(45deg) translateX(-50%);
+  background-color: var(--white);
+  z-index: 400;
+}
+
+.tooltip::before {
+  top: 0px;
+
+  background-color: var(--white);
+  box-shadow: -1px -1px 20px var(--gray-400);
+
+  transform: rotate(45deg) translateX(-50%) translateZ(-1px);
+  z-index: -1;
+}
+
+.tooltip_ssmm--fb {
+  top: 45px;
+  left: 46%;
+}
+
+.tooltip_ssmm--tw {
+  top: 115px;
+  left: 46%;
+}
+
+.tooltip_ssmm--go {
+  top: 186px;
+  left: 46%;
+}

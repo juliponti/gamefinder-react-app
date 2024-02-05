@@ -1,0 +1,27 @@
+@import "../login/login.css";
+@import "../login/loginCard.css";
+@import "../login/loginHeader.css";
+@import "../app/darkMode.css";
+@import "../app/snackbar.css";
+
+@media screen and (min-width: 415px) and (max-width: 650px) {
+  .carousel-container {
+    justify-content: flex-start;
+  }
+
+  .arrow__container {
+    display: none;
+  }
+
+  .carousel-controller {
+    display: none;
+  }
+  .login-card__container {
+    transform: translateX(-50%);
+    margin: 22px 50% 11px 50%;
+  }
+
+  .darkmode-container {
+    margin-right: 0;
+  }
+}

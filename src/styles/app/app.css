@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Color Palette */
+
+:root {
+  /* Primary */
+
+  --primary-100: #5fe19b;
+  --primary-200: #4cc986;
+  --primary-300: #36b972;
+  --primary-350: #0ea152;
+  --primary-400: #067b3c;
+
+  --button-active: #2bb34f;
+  --button-hover: #5fe19bb5;
+
+  --error-color: #fb5f5f;
+  --error-color-hover: #ff9f9f;
+
+  /* Neutrals */
+
+  --white: #ffffff;
+
+  --gray-50: #f0f0f0;
+  --gray-55: #f1f1f1;
+  --gray-100: #e7e7e7;
+  --gray-200: #d8d8d8;
+  --gray-250: #e1e1e4;
+  --gray-300: #c4c4c4;
+  --gray-400: #939393;
+  --gray-500: #515151;
+  --gray-550: #3d3d3d;
+  --gray-600: #303030;
+  --gray-650: #2a2a2a;
+  --gray-700: #141414;
+  --gray-800: #151515;
+
+  --box-shadow: rgba(106, 106, 106, 0.25);
+  --modal-text-shadow: rgba(0, 0, 0, 0.25);
+  --white-transparent: rgba(255, 255, 255, 0);
+  --white-transparent-100: rgba(255, 255, 255, 0.0001);
+  --black-transparent: rgba(0, 0, 0, 0.5);
+  --black-transparent-100: rgba(0, 0, 0, 0.0001);
+  --total-black: #000000;
+  --menu-background: #ffffff;
+
+  --modal-bg-1: var(--white-transparent);
+  --modal-bg-2: var(--gray-50);
+  --text-color: var(--gray-500);
+  --primary-color: var(--primary-300);
+  --chip-color: var(--primary-300);
+}
+
+.theme {
+  --header-color: var(--white-transparent);
+  --logo-color: var(--gray-550);
+  --text-color: var(--gray-500);
+  --primary-color: var(--primary-300);
+  --bg-color: var(--gray-50);
+  --bg-img: url("../../assets/background-images/background-1.jpg");
+
+  --login-color: var(--gray-50);
+  --card-color: var(--white);
+  --box-shadow-color: var(--box-shadow);
+  --ssmm-color: var(--primary-300);
+
+  --switch-color: var(--gray-250);
+  --active-vw-bg-color: var(--gray-400);
+  --active-vw-lines-color: var(--gray-500);
+  --inactive-vw-bg-color: var(--gray-200);
+  --inactive-vw-lines-color: var(--gray-300);
+  --controllers: var(--white);
+
+  --footer-gradient1: var(--white-transparent);
+  --footer-gradient2: var(--gray-250);
+
+  --hamburger-menu-bg: var(--white);
+  --hamburger-menu-lines: var(--gray-250);
+
+  --modal-bg-1: var(--white-transparent);
+  --modal-bg-2: var(--gray-50);
+  --chip-color: var(--primary-300);
+
+  ---skeleton-g1: rgba(255, 255, 255, 0.05);
+  ---skeleton-g2: var(--white);
+}
+
+.theme--dark {
+  --header-color: transparent;
+  --logo-color: var(--white);
+  --text-color: var(--white);
+  --primary-color: var(--primary-100);
+  --bg-color: var(--gray-800);
+  --bg-img: url();
+
+  --login-color: var(--black-transparent);
+  --card-color: var(--gray-600);
+  --ssmm-color: var(--white);
+
+  --switch-color: var(--gray-250);
+  --inactive-vw-bg-color: var(--gray-600);
+  --inactive-vw-lines-color: var(--gray-500);
+  --active-vw-bg-color: var(--gray-500);
+  --active-vw-lines-color: var(--white);
+  --controllers: var(--gray-500);
+
+  --footer-gradient1: var(--black-transparent-100);
+  --footer-gradient2: var(--total-black);
+
+  --hamburger-menu-bg: var(--gray-650);
+  --hamburger-menu-lines: var(--gray-500);
+
+  --modal-bg-1: rgba(48, 48, 48, 0.0001);
+  --modal-bg-2: var(--gray-600);
+  --chip-color: var(--white);
+
+  ---skeleton-g1: rgba(219, 219, 219, 0.05);
+  ---skeleton-g2: var(--white);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: exo, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+*::-moz-selection {
+  background: var(--primary-300);
+}
+
+*::selection {
+  background: var(--primary-300);
+}

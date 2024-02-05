@@ -1,0 +1,106 @@
+@import "../login/login.css";
+@import "../login/loginCard.css";
+@import "../login/loginHeader.css";
+@import "../app/darkMode.css";
+@import "../app/snackbar.css";
+
+@media screen and (max-width: 414px) {
+  /*** Header ***/
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 33px 0;
+  }
+
+  .header-div {
+    display: block;
+    padding: 0;
+  }
+
+  .header-theme__container span {
+    font-size: 1rem;
+  }
+  .header-theme__container button img {
+    width: 85%;
+  }
+  .header-div .logo {
+    margin: auto;
+    width: 61%;
+  }
+
+  .darkmode-container {
+    margin: 0;
+  }
+
+  /*** Login card ***/
+  .card__container {
+    margin: 0px;
+    height: 677px;
+    padding: 21px 18px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .login-card__container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .login__card {
+    height: 68%;
+  }
+
+  .form__container {
+    margin-top: 24px;
+  }
+
+  .secondary__container {
+    margin: 17px 0 29px 0;
+  }
+
+  .or__container {
+    height: 50px;
+  }
+
+  .or__container p:after {
+    left: 54%;
+  }
+
+  .or__container p:before {
+    left: 0;
+  }
+
+  .ssmm__container {
+    height: 173px;
+  }
+  .ssmm-btn {
+    font-size: 0.875rem;
+  }
+
+  /*** Carousel  ***/
+
+  .carousel-container {
+    justify-content: flex-start;
+  }
+
+  .carousel-controller {
+    display: none;
+  }
+
+  .arrow__container {
+    display: none;
+  }
+
+  /*** Snackbar  ***/
+
+  .snackbar {
+    max-width: 200px;
+  }
+
+  .show {
+    left: 50%;
+  }
+}

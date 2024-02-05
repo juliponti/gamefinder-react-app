@@ -1,0 +1,126 @@
+.login-container {
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: var(--gray-50);
+}
+
+.carousel-container {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--bg-color);
+
+  transition: all 0.3s;
+  background-position: center;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1440px;
+
+  margin: 0 auto;
+}
+
+.arrow__container {
+  position: relative;
+
+  width: 91px;
+  height: 820px;
+
+  border: none;
+  background-color: transparent;
+}
+
+.arrow__container > button:focus-visible {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 0;
+  border-radius: 50%;
+}
+
+.arrow__container > button > svg circle,
+.bullets--svg > rect {
+  fill: var(--controllers);
+}
+
+.arrow__container > button > svg path,
+.bullets--svg circle {
+  fill: var(--logo-color);
+}
+
+.arrow--left,
+.arrow--right {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  top: 394px;
+  filter: drop-shadow(0 0 5px var(--gray-400));
+  cursor: pointer;
+}
+
+.arrow--left {
+  left: 39%;
+}
+
+.arrow--right {
+  right: -8%;
+}
+
+/* carousel controller*/
+
+.carousel-controller {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.dot-inactive,
+.dot-inactive-dark {
+  cursor: pointer;
+  display: flex;
+  opacity: 25%;
+  background-color: var(--gray-500);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.dot-active,
+.dot-active-dark {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--gray-650);
+}
+
+.dot-inactive-dark {
+  opacity: 0.25;
+  background-color: var(--white);
+}
+
+.dot-active-dark {
+  background-color: var(--white);
+}
+
+.bullet-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 120px;
+  height: 27px;
+  background-color: var(--controllers);
+  border-radius: 18px;
+  padding-left: 13px;
+  margin-top: 25px;
+}

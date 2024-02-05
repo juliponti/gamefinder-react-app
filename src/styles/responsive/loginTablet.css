@@ -1,0 +1,45 @@
+@import "../login/login.css";
+@import "../login/loginCard.css";
+@import "../login/loginHeader.css";
+@import "../app/darkMode.css";
+@import "../app/snackbar.css";
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header-div {
+    padding: 0 50px;
+  }
+
+  .logo {
+    width: 40%;
+    margin: 20px 0 10px;
+  }
+
+  .header-theme__container {
+    height: 30px;
+    margin: 0;
+  }
+
+  .header-theme__container button img {
+    width: 55px;
+  }
+
+  .login-card__container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .card__container {
+    margin-bottom: 0px;
+  }
+
+  .snackbar {
+    left: 47%;
+  }
+}

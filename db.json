@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "email": "soyrick@gmail.com",
+      "password": "$2a$10$TSsO1ppqiCeI1REZlMTnK.8C31nouik4dcoReTjyZ8EXnshnqUiVO",
+      "name": "Rick Sanchez",
+      "picture": true,
+      "id": 1
+    },
+    {
+      "email": "soymorty@gmail.com",
+      "password": "$2a$10$JjYGKeXyaWnSM43E6c4Yj.OiRcZLg23zGS1s3hye0mR3eFn91WUT2",
+      "name": "Morty Smith",
+      "picture": false,
+      "id": 2
+    }
+  ]
+}

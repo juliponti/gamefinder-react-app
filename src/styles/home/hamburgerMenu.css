@@ -1,0 +1,87 @@
+button.hamburger-menu{
+    display: none;
+    border: 0;  
+    border-color: transparent;
+    background: none;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+}
+
+button.hamburger-menu:focus-visible{
+    outline: 2px solid var(--gray-200);
+    outline-offset: 6px;
+    border-radius: 1px;
+    background-color: transparent;
+}
+
+
+.hambuerger-menu-display{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;
+
+    background-color: var(--menu-background);
+    
+} 
+/*** header menu ***/
+.hambuerger-menu-display .menu-header{
+    display: flex;
+    justify-content: space-between;
+    height: 78px;
+}
+.hambuerger-menu-display button {
+    background: none;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.profile-picture{
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+}
+.user{
+    display: flex;
+    margin: 16px auto 14px 16px;
+}
+
+.user h4{
+    font-size: 1.125rem;
+    font-weight: 800;
+    line-height: 1.5rem;
+}
+.close-menu {
+    margin: 16px;
+}
+
+/*** menu ***/
+.menu-list{
+    margin: 18px auto 673px 16px;
+}
+
+.menu-list ul li {
+    list-style: none;
+    margin-bottom: 32px;
+}
+
+.menu-list ul li button{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+/*** footer menu logout ***/
+.menu-logout{
+    margin: 15px auto auto 16px;
+}
+
+.menu-logout button {
+    font-size: 0.94rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+

@@ -1,0 +1,69 @@
+.home-header {
+    width: 100%;
+    height: 94px;
+  
+    background: linear-gradient(
+      180deg,
+      var(--primary-100) 0%,
+      var(--primary-300) 50%,
+      var(--primary-350) 100%
+    );
+    box-shadow: 1px -3px 36px var(--black-transparent);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 44px;
+}
+
+.logo-container .logo{
+    margin-left: -2px;
+    width: 267px;
+    height: 38px;
+    display: block;
+}
+
+.profile-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 115px;
+    margin-right: -2px;
+}
+
+.profile-picture{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.log-out button {
+    color: var(--white);
+    font-size: 0.938rem;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    background-color: inherit;
+}
+
+    .log-out:hover {
+        color: var(--gray-200);
+        transition: all 0.3s;
+    }
+
+    .log-out::focus-visible {
+        outline: 1px solid var(--white);
+        outline-offset: 5px;
+        border-radius: 3px;
+    }
+
+   
